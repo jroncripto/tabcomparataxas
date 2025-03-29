@@ -5,19 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela com Conteúdo Aleatório</title>
     <style>
+        body {
+            font-family: sans-serif;
+        }
+        h2 {
+            color: #2e8b57; /* Verde mais escuro e elegante */
+            text-align: center;
+            margin-bottom: 20px;
+        }
         table {
             border-collapse: collapse;
-            width: 100%;
+            width: 95%; /* Ajuste a largura para centralizar melhor */
+            margin: 20px auto; /* Centraliza a tabela na página */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+            border-radius: 8px; /* Arredonda os cantos da tabela */
+            overflow: hidden; /* Garante que a borda arredondada funcione com o cabeçalho */
+        }
+        thead {
+            background-color: #f2f2f2; /* Cinza claro para o cabeçalho */
+            border-bottom: 2px solid #ccc;
         }
         th, td {
-            border: 1px solid black;
-            padding: 8px;
+            border: none; /* Remove as bordas individuais das células */
+            padding: 12px 15px; /* Aumenta o espaçamento interno */
+            text-align: left; /* Alinha o texto à esquerda por padrão */
+        }
+        th {
+            font-weight: bold;
+            color: #333;
+            text-align: center; /* Centraliza o texto do cabeçalho */
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9; /* Adiciona um fundo levemente diferente para linhas pares */
+        }
+        tbody td {
+            color: #555;
+        }
+        tbody tr:hover {
+            background-color: #e6f7ff; /* Destaca a linha ao passar o mouse */
+            cursor: pointer; /* Indica que a linha é interativa (opcional) */
+        }
+        p {
+            font-size: 0.9em;
+            color: #777;
             text-align: center;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
-    <h2 style="color: green;">COMPARATIVO DE TAXAS</h2>
+    <h2>COMPARATIVO DE TAXAS</h2>
     <table>
         <thead>
             <tr>
@@ -38,9 +75,9 @@
                 <td>Texto Aleatório A1</td>
                 <td>Número 7</td>
                 <td>Cor Azul</td>
-                <td>Data 2025-03-16</td>
+                <td>2025-03-16</td>
                 <td>Item X</td>
-                <td>Valor R$ 15.50</td>
+                <td>R$ 15.50</td>
                 <td>Sim</td>
                 <td>Opção B</td>
                 <td>Palavra Chave 1</td>
@@ -50,9 +87,9 @@
                 <td>Conteúdo Genérico B2</td>
                 <td>Número 23</td>
                 <td>Cor Verde</td>
-                <td>Data 2024-11-05</td>
+                <td>2024-11-05</td>
                 <td>Item Y</td>
-                <td>Valor R$ 99.99</td>
+                <td>R$ 99.99</td>
                 <td>Não</td>
                 <td>Opção A</td>
                 <td>Palavra Chave 2</td>
@@ -62,9 +99,9 @@
                 <td>Dado Variado C3</td>
                 <td>Número 101</td>
                 <td>Cor Vermelho</td>
-                <td>Data 2026-07-20</td>
+                <td>2026-07-20</td>
                 <td>Item Z</td>
-                <td>Valor R$ 4.20</td>
+                <td>R$ 4.20</td>
                 <td>Sim</td>
                 <td>Opção C</td>
                 <td>Palavra Chave 3</td>
@@ -74,9 +111,9 @@
                 <td>Informação Solta D4</td>
                 <td>Número 5</td>
                 <td>Cor Amarelo</td>
-                <td>Data 2023-01-10</td>
+                <td>2023-01-10</td>
                 <td>Item W</td>
-                <td>Valor R$ 120.00</td>
+                <td>R$ 120.00</td>
                 <td>Não</td>
                 <td>Opção B</td>
                 <td>Palavra Chave 4</td>
@@ -86,9 +123,9 @@
                 <td>Amostra de Dados E5</td>
                 <td>Número 42</td>
                 <td>Cor Laranja</td>
-                <td>Data 2027-05-25</td>
+                <td>2027-05-25</td>
                 <td>Item V</td>
-                <td>Valor R$ 78.30</td>
+                <td>R$ 78.30</td>
                 <td>Sim</td>
                 <td>Opção A</td>
                 <td>Palavra Chave 5</td>
