@@ -1,138 +1,269 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabela com Conteúdo Aleatório</title>
+    <title>Comparativo de Maquininhas de Cartão</title>
     <style>
         body {
-            font-family: sans-serif;
-        }
-        h2 {
-            color: #2e8b57; /* Verde mais escuro e elegante */
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        table {
-            border-collapse: collapse;
-            width: 95%; /* Ajuste a largura para centralizar melhor */
-            margin: 20px auto; /* Centraliza a tabela na página */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
-            border-radius: 8px; /* Arredonda os cantos da tabela */
-            overflow: hidden; /* Garante que a borda arredondada funcione com o cabeçalho */
-        }
-        thead {
-            background-color: #f2f2f2; /* Cinza claro para o cabeçalho */
-            border-bottom: 2px solid #ccc;
-        }
-        th, td {
-            border: none; /* Remove as bordas individuais das células */
-            padding: 12px 15px; /* Aumenta o espaçamento interno */
-            text-align: left; /* Alinha o texto à esquerda por padrão */
-        }
-        th {
-            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #f4f6f8;
             color: #333;
-            text-align: center; /* Centraliza o texto do cabeçalho */
         }
-        tbody tr:nth-child(even) {
-            background-color: #f9f9f9; /* Adiciona um fundo levemente diferente para linhas pares */
-        }
-        tbody td {
-            color: #555;
-        }
-        tbody tr:hover {
-            background-color: #e6f7ff; /* Destaca a linha ao passar o mouse */
-            cursor: pointer; /* Indica que a linha é interativa (opcional) */
-        }
-        p {
-            font-size: 0.9em;
-            color: #777;
+
+        h1 {
             text-align: center;
-            margin-top: 10px;
+            color: #007bff;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        td a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        td a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilo para colunas específicas (opcional) */
+        td:nth-child(1), th:nth-child(1) { /* Coluna Empresa */
+            width: 10%;
+        }
+
+        td:nth-child(8), th:nth-child(8), /* Colunas Valor */
+        td:nth-child(9), th:nth-child(9) {
+            width: 15%;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <h2>COMPARATIVO DE TAXAS</h2>
+
+    <h1>Comparativo de Maquininhas de Cartão</h1>
+
     <table>
         <thead>
             <tr>
-                <th>Coluna 1</th>
-                <th>Coluna 2</th>
-                <th>Coluna 3</th>
-                <th>Coluna 4</th>
-                <th>Coluna 5</th>
-                <th>Coluna 6</th>
-                <th>Coluna 7</th>
-                <th>Coluna 8</th>
-                <th>Coluna 9</th>
-                <th>Coluna 10</th>
+                <th>Empresa</th>
+                <th>Plano</th>
+                <th>Débito</th>
+                <th>Crédito à Vista</th>
+                <th>Crédito Parcelado 12x</th>
+                <th>Prazo de Recebimento</th>
+                <th>Conta Pessoa Física</th>
+                <th>Aluguel/Comodato/Venda</th>
+                <th>Máquina Mais Barata</th>
+                <th>Máquina Mais Cara</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Texto Aleatório A1</td>
-                <td>Número 7</td>
-                <td>Cor Azul</td>
-                <td>2025-03-16</td>
-                <td>Item X</td>
-                <td>R$ 15.50</td>
+                <td>Ton</td>
+                <td>Ton Pro</td>
+                <td>1,98%</td>
+                <td>4,98%</td>
+                <td>A partir de 9,91%</td>
+                <td>1 dia</td>
                 <td>Sim</td>
-                <td>Opção B</td>
-                <td>Palavra Chave 1</td>
-                <td>Info #1</td>
+                <td>Aluguel</td>
+                <td>Ton Super</td>
+                <td>Ton Pro</td>
             </tr>
             <tr>
-                <td>Conteúdo Genérico B2</td>
-                <td>Número 23</td>
-                <td>Cor Verde</td>
-                <td>2024-11-05</td>
-                <td>Item Y</td>
-                <td>R$ 99.99</td>
-                <td>Não</td>
-                <td>Opção A</td>
-                <td>Palavra Chave 2</td>
-                <td>Info #2</td>
-            </tr>
-            <tr>
-                <td>Dado Variado C3</td>
-                <td>Número 101</td>
-                <td>Cor Vermelho</td>
-                <td>2026-07-20</td>
-                <td>Item Z</td>
-                <td>R$ 4.20</td>
+                <td>Ton</td>
+                <td>Ton Super</td>
+                <td>0,99%</td>
+                <td>2,99%</td>
+                <td>A partir de 5,59%</td>
+                <td>30 dias</td>
                 <td>Sim</td>
-                <td>Opção C</td>
-                <td>Palavra Chave 3</td>
-                <td>Info #3</td>
+                <td>Aluguel</td>
+                <td>-</td>
+                <td>-</td>
             </tr>
             <tr>
-                <td>Informação Solta D4</td>
-                <td>Número 5</td>
-                <td>Cor Amarelo</td>
-                <td>2023-01-10</td>
-                <td>Item W</td>
-                <td>R$ 120.00</td>
-                <td>Não</td>
-                <td>Opção B</td>
-                <td>Palavra Chave 4</td>
-                <td>Info #4</td>
-            </tr>
-            <tr>
-                <td>Amostra de Dados E5</td>
-                <td>Número 42</td>
-                <td>Cor Laranja</td>
-                <td>2027-05-25</td>
-                <td>Item V</td>
-                <td>R$ 78.30</td>
+                <td>PagBank</td>
+                <td>Max</td>
+                <td>1,74%</td>
+                <td>4,29%</td>
+                <td>A partir de 6,87%</td>
+                <td>1 dia</td>
                 <td>Sim</td>
-                <td>Opção A</td>
-                <td>Palavra Chave 5</td>
-                <td>Info #5</td>
+                <td>Venda</td>
+                <td>Básico</td>
+                <td>Max</td>
+            </tr>
+            <tr>
+                <td>PagBank</td>
+                <td>Básico</td>
+                <td>1,99%</td>
+                <td>3,19%</td>
+                <td>A partir de 8,11%</td>
+                <td>30 dias</td>
+                <td>Sim</td>
+                <td>Venda</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>SumUp</td>
+                <td>Top</td>
+                <td>1,9%</td>
+                <td>4,6%</td>
+                <td>A partir de 4,6%</td>
+                <td>30 dias</td>
+                <td>Sim</td>
+                <td>Venda</td>
+                <td>On</td>
+                <td>Top</td>
+            </tr>
+            <tr>
+                <td>SumUp</td>
+                <td>On</td>
+                <td>1,9%</td>
+                <td>4,6%</td>
+                <td>A partir de 4,6%</td>
+                <td>30 dias</td>
+                <td>Sim</td>
+                <td>Venda</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Cielo</td>
+                <td>D195</td>
+                <td>1,99%</td>
+                <td>4,99%</td>
+                <td>A partir de 5,99%</td>
+                <td>30 dias</td>
+                <td>Sim</td>
+                <td>Aluguel</td>
+                <td>D195</td>
+                <td>LIO</td>
+            </tr>
+            <tr>
+                <td>Cielo</td>
+                <td>LIO</td>
+                <td>1,99%</td>
+                <td>4,99%</td>
+                <td>A partir de 5,99%</td>
+                <td>30 dias</td>
+                <td>Sim</td>
+                <td>Aluguel</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>InfinitePay</td>
+                <td>Smart</td>
+                <td>0,75%</td>
+                <td>2,69%</td>
+                <td>A partir de 3,94%</td>
+                <td>1 dia</td>
+                <td>Sim</td>
+                <td>Venda</td>
+                <td>Smart</td>
+                <td>Link</td>
+            </tr>
+            <tr>
+                <td>InfinitePay</td>
+                <td>Link</td>
+                <td>0,99%</td>
+                <td>3,49%</td>
+                <td>A partir de 4,99%</td>
+                <td>30 dias</td>
+                <td>Sim</td>
+                <td>Venda</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Stone</td>
+                <td>Ton Pro</td>
+                <td>1,98%</td>
+                <td>4,98%</td>
+                <td>A partir de 9,91%</td>
+                <td>1 dia</td>
+                <td>Sim</td>
+                <td>Aluguel</td>
+                <td>Ton Super</td>
+                <td>Ton Pro</td>
+            </tr>
+            <tr>
+                <td>Stone</td>
+                <td>Ton Super</td>
+                <td>0,99%</td>
+                <td>2,99%</td>
+                <td>A partir de 5,59%</td>
+                <td>30 dias</td>
+                <td>Sim</td>
+                <td>Aluguel</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Mercado Pago</td>
+                <td>Point Mini</td>
+                <td>1,99%</td>
+                <td>4,98%</td>
+                <td>A partir de 9,90%</td>
+                <td>30 dias</td>
+                <td>Sim</td>
+                <td>Venda</td>
+                <td>Point Mini</td>
+                <td>Point Pro</td>
+            </tr>
+            <tr>
+                <td>Mercado Pago</td>
+                <td>Point Pro</td>
+                <td>1,99%</td>
+                <td>4,98%</td>
+                <td>A partir de 9,90%</td>
+                <td>30 dias</td>
+                <td>Sim</td>
+                <td>Venda</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Rede</td>
+                <td>Rede Mais</td>
+                <td>1,99%</td>
+                <td>4,99%</td>
+                <td>A partir de 5,99%</td>
+                <td>30 dias</td>
+                <td>Sim</td>
+                <td>Aluguel</td>
+                <td>Rede Mais</td>
+                <td>Rede Mais</td>
             </tr>
         </tbody>
     </table>
-<p> Última atualização: 29/03/2025 - 23:59h</p>
+
 </body>
 </html>
