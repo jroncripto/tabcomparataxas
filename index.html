@@ -1,151 +1,132 @@
-<table>
-  <style>
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 20px;
-      font-family: sans-serif;
-    }
-
-    th, td {
-      border: 1px solid #ddd;
-      padding: 8px;
-      text-align: left;
-    }
-
-    th {
-      background-color: #f2f2f2;
-      font-weight: bold;
-    }
-
-    tbody tr:nth-child(even) {
-      background-color: #f9f9f9;
-    }
-
-    .highlight {
-      font-weight: bold;
-      color: #007bff; /* Cor para destacar as taxas */
-    }
-  </style>
-  <thead>
-    <tr>
-      <th>Empresa</th>
-      <th>Plano</th>
-      <th>Débito</th>
-      <th>Crédito à vista</th>
-      <th>Crédito 12x</th>
-      <th>Prazo de recebimento</th>
-      <th>Pessoa física</th>
-      <th>Aluguel</th>
-      <th>Comodato</th>
-      <th>Valor da maquininha</th>
-      <th>Mais informações</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Ton</td>
-      <td>Super</td>
-      <td class="highlight">1,98%</td>
-      <td class="highlight">4,98%</td>
-      <td class="highlight">9,91%</td>
-      <td>Na hora ou 1 dia útil</td>
-      <td>Sim</td>
-      <td>Sim</td>
-      <td>Sim</td>
-      <td>A partir de R$ 5,50</td>
-      <td><a href="https://www.example.com">+ Informações</a></td>
-    </tr>
-    <tr>
-      <td>Ton</td>
-      <td>Mega</td>
-      <td class="highlight">1,69%</td>
-      <td class="highlight">3,86%</td>
-      <td class="highlight">9,86%</td>
-      <td>Na hora ou 1 dia útil</td>
-      <td>Sim</td>
-      <td>Sim</td>
-      <td>Sim</td>
-      <td>A partir de R$ 9,90</td>
-      <td><a href="https://www.example.com">+ Informações</a></td>
-    </tr>
-    <tr>
-      <td>Ton</td>
-      <td>Brother</td>
-      <td class="highlight">1,45%</td>
-      <td class="highlight">3,39%</td>
-      <td class="highlight">6,73%</td>
-      <td>Na hora ou 1 dia útil</td>
-      <td>Sim</td>
-      <td>Sim</td>
-      <td>Sim</td>
-      <td>A partir de R$ 12,90</td>
-      <td><a href="https://www.example.com">+ Informações</a></td>
-    </tr>
-    <tr>
-      <td>PagBank</td>
-      <td>PagBank</td>
-      <td class="highlight">1,99%</td>
-      <td class="highlight">3,19%</td>
-      <td class="highlight">3,79%</td>
-      <td>Na hora, 14 dias ou 30 dias</td>
-      <td>Sim</td>
-      <td>Sim</td>
-      <td>Sim</td>
-      <td>A partir de R$ 47,88</td>
-      <td><a href="https://www.example.com">+ Informações</a></td>
-    </tr>
-    <tr>
-      <td>SumUp</td>
-      <td>SumUp</td>
-      <td class="highlight">1,05%</td>
-      <td class="highlight">3,15%</td>
-      <td class="highlight">4,50%</td>
-      <td>Na hora ou 1 dia útil</td>
-      <td>Sim</td>
-      <td>Sim</td>
-      <td>Sim</td>
-      <td>A partir de R$ 199,00</td>
-      <td><a href="https://www.example.com">+ Informações</a></td>
-    </tr>
-    <tr>
-      <td>Cielo</td>
-      <td>Cielo</td>
-      <td class="highlight">0,99%</td>
-      <td class="highlight">3,59%</td>
-      <td class="highlight">8,99%</td>
-      <td>1 dia útil</td>
-      <td>Sim</td>
-      <td>Sim</td>
-      <td>Sim</td>
-      <td>A partir de R$ 249,00</td>
-      <td><a href="https://www.example.com">+ Informações</a></td>
-    </tr>
-    <tr>
-      <td>Getnet</td>
-      <td>Get Mini</td>
-      <td class="highlight">1,69%</td>
-      <td class="highlight">3,79%</td>
-      <td class="highlight">7,98%</td>
-      <td>2 dias úteis</td>
-      <td>Sim</td>
-      <td>Sim</td>
-      <td>Sim</td>
-      <td>A partir de R$ 14,90</td>
-      <td><a href="https://www.example.com">+ Informações</a></td>
-    </tr>
-    <tr>
-      <td>Mercado Pago</td>
-      <td>Mercado Pago</td>
-      <td class="highlight">0,74%</td>
-      <td class="highlight">0,74%</td>
-      <td class="highlight">8,99%</td>
-      <td>Na hora ou 1 dia útil</td>
-      <td>Sim</td>
-      <td>Sim</td>
-      <td>Sim</td>
-      <td>A partir de R$ 29,90</td>
-      <td><a href="https://www.example.com">+ Informações</a></td>
-    </tr>
-  </tbody>
+<table style="width: 100%; border-collapse: collapse; margin-bottom: 20px; font-family: sans-serif;">
+    <thead style="background-color: #f2f2f2;">
+        <tr>
+            <th style="border: 1px solid #ddd; padding: 8px; text-align: left; font-weight: bold;">Empresa</th>
+            <th style="border: 1px solid #ddd; padding: 8px; text-align: left; font-weight: bold;">Plano</th>
+            <th style="border: 1px solid #ddd; padding: 8px; text-align: left; font-weight: bold;">Taxa Débito</th>
+            <th style="border: 1px solid #ddd; padding: 8px; text-align: left; font-weight: bold;">Taxa Crédito à Vista</th>
+            <th style="border: 1px solid #ddd; padding: 8px; text-align: left; font-weight: bold;">Taxa Crédito Parcelado 12x</th>
+            <th style="border: 1px solid #ddd; padding: 8px; text-align: left; font-weight: bold;">Prazo de Recebimento</th>
+            <th style="border: 1px solid #ddd; padding: 8px; text-align: center; font-weight: bold;">Aceita Conta Pessoa Física</th>
+            <th style="border: 1px solid #ddd; padding: 8px; text-align: left; font-weight: bold;">Valor da Maquininha</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr style="background-color: #f9f9f9;">
+            <td rowspan="2" style="border: 1px solid #ddd; padding: 8px; text-align: left; font-weight: bold; color: #007bff;">Ton</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">Ton Básico</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">1,69%</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">3,49%</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">9,99%</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">D+2</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">Sim</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">A partir de R$ 0,00</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">Ton Brother</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">1,45%</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">3,15%</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">6,73%</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">D+1 ou na hora</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">Sim</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">A partir de R$ 14,90</td>
+        </tr>
+        <tr style="background-color: #f9f9f9;">
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left; font-weight: bold; color: #007bff;">PagBank</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">PagBank</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">1,99%</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">3,19%</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">3,79%</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">Na hora, D+14 ou D+30</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">Sim</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">A partir de R$ 19,90</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left; font-weight: bold; color: #007bff;">SumUp</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">SumUp</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">1,35%</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">3,90%</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">15,90%</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">D+1</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">Sim</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">A partir de R$ 19,90</td>
+        </tr>
+        <tr style="background-color: #f9f9f9;">
+            <td rowspan="2" style="border: 1px solid #ddd; padding: 8px; text-align: left; font-weight: bold; color: #007bff;">Cielo</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">Cielo Flex</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">A partir de 1,39%</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">A partir de 3,09%</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">A partir de 18,13%</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">D+1 ou na hora</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">Sim</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">Sob Consulta</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">Cielo Mais</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">A partir de 0,99%</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">A partir de 2,79%</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">A partir de 17,83%</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">D+1 ou na hora</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">Sim</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">Sob Consulta</td>
+        </tr>
+        <tr style="background-color: #f9f9f9;">
+            <td rowspan="2" style="border: 1px solid #ddd; padding: 8px; text-align: left; font-weight: bold; color: #007bff;">InfinitePay</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">InfiniteBlack</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">1,37%</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">2,77%</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">13,21%</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">Na hora</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">Sim</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">R$ 238,80 ou 12x R$19,90</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">SmartPay</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">0,77%</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">1,47%</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">11,91%</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">Na hora</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">Sim</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">R$ 598,80 ou 12x R$49,90</td>
+        </tr>
+        <tr style="background-color: #f9f9f9;">
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left; font-weight: bold; color: #007bff;">Stone</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">Sob Consulta</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">Sob Consulta</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">Sob Consulta</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">Sob Consulta</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">Sob Consulta</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">Sim</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">Sob Consulta</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="border: 1px solid #ddd; padding: 8px; text-align: left; font-weight: bold; color: #007bff;">Mercado Pago</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">Point Smart</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">1,99%</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">3,09%</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">13,43%</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">Na hora</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">Sim</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">R$ 178,80 ou 12x R$14,90</td>
+        </tr>
+        <tr style="background-color: #f9f9f9;">
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">Point Pro 2</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">1,69%</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">2,79%</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">13,13%</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">Na hora</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">Sim</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">R$ 358,80 ou 12x R$29,90</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left; font-weight: bold; color: #007bff;">Rede</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">Sob Consulta</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">Sob Consulta</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">Sob Consulta</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">Sob Consulta</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">Sob Consulta</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">Sim</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">Sob Consulta</td>
+        </tr>
+    </tbody>
 </table>
